@@ -11,14 +11,14 @@
     </style>
 </head>
 
-<body id="generatePage">
-    <section class="generate-page">
-        <h3>GENERATE INVOICES</h3>
+<body id="invoicePage">
+    <section class="invoice-page">
+        <h3>INVOICE HISTORY</h3>
         <article class="top-nav">
             <a href="" class="active">GENERATE</a>
             <a href="">HISTORY</a>
         </article>
-         <!-- form section is here -->
+        <!-- form section is here -->
         <article class="form-section">
             <div class="left-form">
                 <div class="input-row">
@@ -118,127 +118,164 @@
         <!-- button for clear form and search -->
         <article class="form-btn-div">
             <button>CLEAR FORM</button>
-            <button onclick="document.getElementById('generateTable').style.display = 'block'">SEARCH</button>
+            <button onclick="document.getElementById('invoiceTable').style.display = 'block'">SEARCH</button>
         </article>
         <!-- table section is here -->
-        <article id="generateTable" style="display: none;">
+        <article id="invoiceTable" style="display: none;">
             <table>
                 <thead>
                     <tr>
-                        <th>DRIVER</th>
+                        <th>DATE</th>
                         <th>N</th>
-                        <th>LAST INVOICE</th>
-                        <th>RAISED BY</th>
-                        <th>BOOKINGS</th>
-                        <th>BOOKINGS TOTAL</th>
+                        <th>INVOICE</th>
+                        <th>RAISED</th>
+                        <th>RAISED</th>
+                        <th>BOOK</th>
                         <th>FEECOMM</th>
-                        <th>ADDJUSTMENTS</th>
+                        <th>ADDJUST</th>
                         <th>CHARGES</th>
-                        <th>INV TOTAL</th>
-                        <th>BAL b/f</th>
-                        <th>BAL c/f</th>
-                        <th>ACTIONS [F5] [F6] [F7] [F8]</th>
+                        <th>INV</th>
+                        <th>BAL</th>
+                        <th>BAL</th>
+                        <th>BAL</th>
+                        <th>BAL</th>
+                        <th>BAL</th>
+                        <th>BAL</th>
+                        <th>BOOK</th>
+                        <th></th>
+                        <th></th>
+                        <th>ACTIONS [F4] [F5] [F6]</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="color: #8299d3;">PA01 - SHABERA SIDDIKA</td>
+                        <td>18/03/2024 08:00</td>
+                        <td style="color: #8299d3;">25082620A</td>
+                        <td>COMPLETE</td>
+                        <td>146 SEYMOUR AVE..</td>
+                        <td>GATWICK NORTH T..</td>
+                        <td style="color: #8299d3;">008</td>
+                        <td>SOPHIE ING..</td>
+                        <td  style="color: #8299d3;">TECH</td>
+                        <td>Purchase Order:panding</td>
+                        <td style="background-color: #fe9902;">49.00</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td style="text-align: right;">0</td>
+                        <td>49.00</td>
+                        <td>0</td>
+                        <td>65.00</td>
+                        <td><img src="tick.png" alt="user" width="16px" style="margin-top: 3px;"></td>
                         <td> </td>
-                        <td>29 FEB 2024</td>
-                        <td>Zeeshan Khandwani</td>
-                        <td style="color: #8299d3;">39</td>
-                        <td>£0.00</td>
-                        <td>£-900.00</td>
-                        <td>£0.00</td>
-                        <td style="background-color: #d30005;">£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
+                        <td> </td>
                         <td class="action-buttons">
                             <button>Preview</button>
                             <button>Edit</button>
-                            <button>Payment</button>
-                            <button>Reciept</button>
+                            <button>Del</button>
                         </td>
                     </tr>
                     <tr>
-                        <td style="color: #8299d3;">PA01 - SHABERA SIDDIKA</td>
+                        <td>18/03/2024 08:00</td>
+                        <td style="color: #8299d3;">25082620A</td>
+                        <td>COMPLETE</td>
+                        <td>146 SEYMOUR AVE..</td>
+                        <td>GATWICK NORTH T..</td>
+                        <td style="color: #8299d3;">008</td>
+                        <td>SOPHIE ING..</td>
+                        <td  style="color: #8299d3;">TECH</td>
+                        <td>Purchase Order:panding</td>
+                        <td style="background-color: #fe9902;">49.00</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td style="text-align: right;">0</td>
+                        <td>49.00</td>
+                        <td>0</td>
+                        <td>65.00</td>
+                        <td><img src="tick.png" alt="user" width="16px" style="margin-top: 3px;"></td>
                         <td> </td>
-                        <td>29 FEB 2024</td>
-                        <td>Zeeshan Khandwani</td>
-                        <td style="color: #8299d3;">39</td>
-                        <td>£0.00</td>
-                        <td>£-900.00</td>
-                        <td>£0.00</td>
-                        <td style="background-color: #d30005;">£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
+                        <td> </td>
                         <td class="action-buttons">
                             <button>Preview</button>
                             <button>Edit</button>
-                            <button>Payment</button>
-                            <button>Reciept</button>
+                            <button>Del</button>
                         </td>
                     </tr>
                     <tr>
-                        <td style="color: #8299d3;">PA01 - SHABERA SIDDIKA</td>
+                        <td>18/03/2024 08:00</td>
+                        <td style="color: #8299d3;">25082620A</td>
+                        <td>COMPLETE</td>
+                        <td>146 SEYMOUR AVE..</td>
+                        <td>GATWICK NORTH T..</td>
+                        <td style="color: #8299d3;">008</td>
+                        <td>SOPHIE ING..</td>
+                        <td  style="color: #8299d3;">TECH</td>
+                        <td>Purchase Order:panding</td>
+                        <td style="background-color: #fe9902;">49.00</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td style="text-align: right;">0</td>
+                        <td>49.00</td>
+                        <td>0</td>
+                        <td>65.00</td>
+                        <td><img src="tick.png" alt="user" width="16px" style="margin-top: 3px;"></td>
                         <td> </td>
-                        <td>29 FEB 2024</td>
-                        <td>Zeeshan Khandwani</td>
-                        <td style="color: #8299d3;">39</td>
-                        <td>£0.00</td>
-                        <td>£-900.00</td>
-                        <td>£0.00</td>
-                        <td style="background-color: #d30005;">£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
+                        <td> </td>
                         <td class="action-buttons">
                             <button>Preview</button>
                             <button>Edit</button>
-                            <button>Payment</button>
-                            <button>Reciept</button>
+                            <button>Del</button>
                         </td>
                     </tr>
                     <tr>
-                        <td style="color: #8299d3;">PA01 - SHABERA SIDDIKA</td>
+                        <td>18/03/2024 08:00</td>
+                        <td style="color: #8299d3;">25082620A</td>
+                        <td>COMPLETE</td>
+                        <td>146 SEYMOUR AVE..</td>
+                        <td>GATWICK NORTH T..</td>
+                        <td style="color: #8299d3;">008</td>
+                        <td>SOPHIE ING..</td>
+                        <td  style="color: #8299d3;">TECH</td>
+                        <td>Purchase Order:panding</td>
+                        <td style="background-color: #fe9902;">49.00</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td style="text-align: right;">0</td>
+                        <td>49.00</td>
+                        <td>0</td>
+                        <td>65.00</td>
+                        <td><img src="tick.png" alt="user" width="16px" style="margin-top: 3px;"></td>
                         <td> </td>
-                        <td>29 FEB 2024</td>
-                        <td>Zeeshan Khandwani</td>
-                        <td style="color: #8299d3;">39</td>
-                        <td>£0.00</td>
-                        <td>£-900.00</td>
-                        <td>£0.00</td>
-                        <td style="background-color: #d30005;">£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
+                        <td> </td>
                         <td class="action-buttons">
                             <button>Preview</button>
                             <button>Edit</button>
-                            <button>Payment</button>
-                            <button>Reciept</button>
+                            <button>Del</button>
                         </td>
                     </tr>
                     <tr>
-                        <td style="color: #8299d3;">PA01 - SHABERA SIDDIKA</td>
+                        <td>18/03/2024 08:00</td>
+                        <td style="color: #8299d3;">25082620A</td>
+                        <td>COMPLETE</td>
+                        <td>146 SEYMOUR AVE..</td>
+                        <td>GATWICK NORTH T..</td>
+                        <td style="color: #8299d3;">008</td>
+                        <td>SOPHIE ING..</td>
+                        <td  style="color: #8299d3;">TECH</td>
+                        <td>Purchase Order:panding</td>
+                        <td style="background-color: #fe9902;">49.00</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td style="text-align: right;">0</td>
+                        <td>49.00</td>
+                        <td>0</td>
+                        <td>65.00</td>
+                        <td><img src="tick.png" alt="user" width="16px" style="margin-top: 3px;"></td>
                         <td> </td>
-                        <td>29 FEB 2024</td>
-                        <td>Zeeshan Khandwani</td>
-                        <td style="color: #8299d3;">39</td>
-                        <td>£0.00</td>
-                        <td>£-900.00</td>
-                        <td>£0.00</td>
-                        <td style="background-color: #d30005;">£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
-                        <td>£0.00</td>
+                        <td> </td>
                         <td class="action-buttons">
                             <button>Preview</button>
                             <button>Edit</button>
-                            <button>Payment</button>
-                            <button>Reciept</button>
+                            <button>Del</button>
                         </td>
                     </tr>
                     <!-- More rows can be added here -->

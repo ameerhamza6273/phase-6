@@ -1,12 +1,15 @@
 /* button page style is here */
 #buttonPage,
+#invoicePage,
+#paymentPage,
 #generatePage{
     margin: 0;
     background-color: #eae8eb;
     height: 100vh;
 }
-
+.invoice-page,
 .button-page,
+.payment-page,
 .generate-page{
     padding: 20px 45px;
 }
@@ -29,23 +32,28 @@
 }
 
 /* generate invoices page style is here */
-
+.invoice-page,
 .generate-page{
     background-color: #eae8eb;
     padding: 25px 15px;
 }
+.invoice-page h3,
 .generate-page h3{
     color: #413f42;
     margin: 0;
     font-family: 'Prompt';
     font-size: 15px;
 }
+
+.invoice-page .top-nav,
 .generate-page .top-nav{
     background-color: #aba9ac ;
     padding: 11px 6px ;
     margin-top: 6px;
     border-radius: 3px;
 }
+
+.invoice-page .top-nav a,
 .generate-page .top-nav a{
     background-color: transparent ;
     padding: 6px 12px ;
@@ -55,30 +63,34 @@
     font-family: 'Prompt';
     font-size: 13px;
 }
+
+.invoice-page .top-nav a.active,
 .generate-page .top-nav a.active{
     background-color: #3e3b3e ;
 }
 
 /* generate page form section */
-
+.invoice-page .form-section,
 .generate-page .form-section {
     display: flex;
     gap: 30px;
-    max-width: 1280px;
-    margin: 0 auto;
+    margin: 0 30px;
 }
 
+.invoice-page .form-section .right-form,
+.invoice-page .form-section .left-form,
 .generate-page .form-section .right-form,
 .generate-page .form-section .left-form {
     width: 50%;
     text-align: right;
     padding: 5px;
 }
-
+.invoice-page .form-section .input-row,
 .generate-page .form-section .input-row {
     margin-top: 2px;
 }
 
+.invoice-page .form-section label,
 .generate-page .form-section label {
     font-family: 'Prompt';
     font-size: 14px;
@@ -87,6 +99,7 @@
     margin-right: 20px;
 }
 
+.invoice-page .form-section .input-date,
 .generate-page .form-section .input-date {
     font-family: 'prompt';
     border: 1px solid #aba9acb2;
@@ -96,6 +109,7 @@
     color: #767676;
 }
 
+.invoice-page .form-section .input-day,
 .generate-page .form-section .input-day {
     font-family: 'prompt';
     border: 1px solid #aba9acb2;
@@ -105,6 +119,7 @@
     width: 105px;
 }
 
+.invoice-page .form-section .input-number,
 .generate-page .form-section .input-number {
     font-family: 'prompt';
     border: 1px solid #aba9acb2;
@@ -114,6 +129,7 @@
     color: #767676;
 }
 
+.invoice-page .form-section select,
 .generate-page .form-section select {
     font-family: 'prompt';
     border: 1px solid #aba9acb2;
@@ -123,6 +139,7 @@
     color: #767676;
 }
 
+.invoice-page .form-section .right-form input,
 .generate-page .form-section .right-form input {
     font-family: 'prompt';
     border: 1px solid #aba9acb2;
@@ -130,12 +147,13 @@
     padding: 4px;
     width: 188px;
 }
-
+.invoice-page .form-btn-div,
 .generate-page .form-btn-div {
     display: flex;
     justify-content: space-between;
 }
 
+.invoice-page .form-btn-div button,
 .generate-page .form-btn-div button {
     background-color: #676769;
     text-align: center;
@@ -151,19 +169,32 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
+.invoice-page .form-btn-div button:hover,
 .generate-page .form-btn-div button:hover {
     background-color: #676769ef;
 }
 
 /* generate page table style is here */
-
-
+.invoice-page table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF;
+    margin-top: 30px;
+}
 .generate-page table {
     width: 100%;
     border-collapse: collapse;
     background-color: #feff90;
     margin-top: 30px;
+}
+.invoice-page th{
+    background-color: #aba9ac;
+    color: #FFF;
+    padding: 8px 10px !important;
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Prompt';
+    font-weight: 600;
 }
 
 .generate-page th {
@@ -175,6 +206,16 @@
     font-family: 'Prompt';
     font-weight: 600;
 }
+.invoice-page td{
+    padding: 3px 4px !important;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 10px;
+    font-family: 'Prompt';
+    font-weight: 600;
+    color: #000000de;
+}
+
 .generate-page td {
     padding: 2px 4px !important;
     border: 1px solid #f3f0a3;
@@ -184,16 +225,18 @@
     font-weight: 600;
     color: #000000de;
 }
-
+.invoice-page tr:hover 
 .generate-page tr:hover {
     background-color: #fffe4b;
 }
-
+.invoice-page .action-buttons{
+    text-align: center;
+}
 .generate-page .action-buttons {
     display: flex;
     justify-content: space-around;
 }
-
+.invoice-page .action-buttons button,
 .generate-page .action-buttons button {
     padding: 2px 10px;
     font-size: 11px;
