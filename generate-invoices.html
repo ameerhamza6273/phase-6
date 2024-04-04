@@ -5,51 +5,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet'>
+    <link href='buttonpages.css' rel='stylesheet'>
     <title>generate invoices</title>
     <style>
-        #generatePage{
-            margin: 0;
+        .generate-page .form-section {
+            display: flex;
+            gap: 30px;
+            max-width: 1280px;
+            margin: 0 auto;
         }
 
-        .generate-page{
-            background-color: #eae8eb;
-            padding: 25px 15px;
+        .generate-page .form-section .right-form,
+        .generate-page .form-section .left-form {
+            width: 50%;
+            text-align: right;
+            padding: 5px;
         }
-        .generate-page h3{
-            color: #413f42;
-            margin: 0;
+
+        .generate-page .form-section .input-row {
+            margin-top: 2px;
+        }
+
+        .generate-page .form-section label {
             font-family: 'Prompt';
-            font-size: 15px;
+            font-size: 14px;
+            color: #413f42;
+            font-weight: 600;
+            margin-right: 20px;
         }
-        .generate-page .top-nav{
-            background-color: #aba9ac ;
-            padding: 11px 6px ;
-            margin-top: 6px;
+
+        .generate-page .form-section .input-date {
+            font-family: 'prompt';
+            border: 1px solid #aba9acb2;
             border-radius: 3px;
+            padding: 4px;
+            min-width: 190px;
+            color: #767676;
         }
-        .generate-page .top-nav a{
-            background-color: transparent ;
-            padding: 6px 12px ;
+
+        .generate-page .form-section .input-day {
+            font-family: 'prompt';
+            border: 1px solid #aba9acb2;
+            background-color: #fefe9c;
             border-radius: 3px;
+            padding: 4px;
+            width: 105px;
+        }
+
+        .generate-page .form-section .input-number {
+            font-family: 'prompt';
+            border: 1px solid #aba9acb2;
+            border-radius: 3px;
+            padding: 4px;
+            width: 105px;
+            color: #767676;
+        }
+
+        .generate-page .form-section select {
+            font-family: 'prompt';
+            border: 1px solid #aba9acb2;
+            border-radius: 3px;
+            padding: 4px;
+            min-width: 400px;
+            color: #767676;
+        }
+
+        .generate-page .form-section .right-form input {
+            font-family: 'prompt';
+            border: 1px solid #aba9acb2;
+            border-radius: 3px;
+            padding: 4px;
+            width: 188px;
+        }
+
+        .generate-page .form-btn-div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .generate-page .form-btn-div button {
+            background-color: #676769;
+            text-align: center;
+            width: 130px;
+            padding: 6px 5px 5px 5px;
+            font-size: 12px;
+            display: block;
+            margin: 6px 2px ;
             text-decoration: none;
             color: #FFF;
+            border: 1px solid #aba9acb2;
             font-family: 'Prompt';
-            font-size: 13px;
-        }
-        .generate-page .top-nav a.active{
-            background-color: #3e3b3e ;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body id="generatePage">
-   <section class="generate-page">
+    <section class="generate-page">
         <h3>GENERATE INVOICES</h3>
-        <div class="top-nav">
+        <article class="top-nav">
             <a href="" class="active">GENERATE</a>
             <a href="">HISTORY</a>
+        </article>
+        <article class="form-section">
+            <div class="left-form">
+                <div class="input-row">
+                    <label>FROM</label>
+                    <input type="date" class="input-date">
+                    <input type="text" placeholder="FRI 01Ist" class="input-day">
+                    <input type="number" placeholder="0000" class="input-number">
+                </div>
+
+                <div class="input-row">
+                    <label>TO</label>
+                    <input type="date" class="input-date">
+                    <input type="text" placeholder="SUN 31st" class="input-day">
+                    <input type="number" placeholder="2359" class="input-number">
+                </div>
+
+                <div class="input-row">
+                    <label>LAST INVOICE</label>
+                    <input type="date" class="input-date">
+                    <input type="text" placeholder="WED 03rd" class="input-day">
+                    <input type="number" placeholder="0000" class="input-number">
+                </div>
+            </div>
+            <div class="right-form">
+                <div class="input-row">
+                    <label>DRV REF</label>
+                    <input style="background-color: #aba9ac;" disabled></input>
+                    <input style="background-color: #fefe9c;" disabled></input>
+                </div>
+                <div class="input-row">
+                    <label>DRIVER TYPE</label>
+                    <select>
+                        <option value="" selected>ALL</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label>DRIVER ACTIVE</label>
+                    <select>
+                        <option value="" selected>ACTIVATED ONLY</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label>OUTPUT PREF</label>
+                    <select>
+                        <option value="" selected>ALL</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label>FREQUENCY</label>
+                    <select>
+                        <option value="" selected>ANY</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label>ITEM CHARGE</label>
+                    <select>
+                        <option value="" selected>All</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label>DRIVER PRIMARY SITE</label>
+                    <select>
+                        <option value="" selected>N/A</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label>INVOICE TYPE</label>
+                    <select>
+                        <option value="" selected>All</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+            </div>
+        </article>
+        <div style="width: 100%; border-top: 2px solid #bfbdc0; border-bottom: 2px solid #fbf9fc; margin-top: 5px;">
         </div>
-   </section>
+        <!-- button for clear form and search -->
+        <article class="form-btn-div">
+            <button>CLEAR FORM</button>
+            <button>SEARCH</button>
+        </article>
+    </section>
 
 </body>
 

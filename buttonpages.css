@@ -1,0 +1,59 @@
+/* button page style is here */
+#buttonPage,
+#generatePage{
+    margin: 0;
+}
+
+.button-page,
+.generate-page{
+    background-color: #eae8eb;
+    padding: 20px 45px;
+}
+
+.nav-section a {
+    background-color: #3e3b3e;
+    text-align: center;
+    max-width: 300px;
+    padding: 6px 5px 5px 5px;
+    font-size: 13px;
+    display: block;
+    margin: 2px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Prompt';
+    border-radius: 5px;
+}
+.nav-section a:hover{
+    background-color: #3e3b3ee5;
+}
+
+/* generate invoices page style is here */
+
+.generate-page{
+    background-color: #eae8eb;
+    padding: 25px 15px;
+}
+.generate-page h3{
+    color: #413f42;
+    margin: 0;
+    font-family: 'Prompt';
+    font-size: 15px;
+}
+.generate-page .top-nav{
+    background-color: #aba9ac ;
+    padding: 11px 6px ;
+    margin-top: 6px;
+    border-radius: 3px;
+}
+.generate-page .top-nav a{
+    background-color: transparent ;
+    padding: 6px 12px ;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Prompt';
+    font-size: 13px;
+}
+.generate-page .top-nav a.active{
+    background-color: #3e3b3e ;
+}
