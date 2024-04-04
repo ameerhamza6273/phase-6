@@ -9,11 +9,12 @@
 }
 .invoice-page,
 .button-page,
-.payment-page,
 .generate-page{
     padding: 20px 45px;
 }
-
+.payment-page{
+    padding: 35px 20px;
+}
 .nav-section a {
     background-color: #3e3b3e;
     text-align: center;

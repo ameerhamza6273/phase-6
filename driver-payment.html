@@ -8,6 +8,21 @@
     <link href='buttonpages.css' rel='stylesheet'>
     <title>generate invoices</title>
     <style>
+        .payment-page .top-nav{
+            border-bottom: 6px solid #aba9ac;
+        }
+        .payment-page .top-nav h3 {
+            padding: 6px 12px;
+            border-radius: 3px 3px 0px 0px;
+            color: #FFF;
+            background-color: #3e3b3e;
+            font-family: 'Prompt';
+            font-size: 13px;
+            max-width: 112px;
+            text-align: center;
+            margin: 0;
+        }
+
         /* payment page form section */
         .payment-page .form-section {
             display: flex;
@@ -34,39 +49,11 @@
             margin-right: 20px;
         }
 
-        .payment-page .form-section .input-date {
+        .payment-page .form-section input{
             font-family: 'prompt';
             border: 1px solid #aba9acb2;
             border-radius: 3px;
             padding: 4px;
-            min-width: 190px;
-            color: #767676;
-        }
-
-        .payment-page .form-section .input-day {
-            font-family: 'prompt';
-            border: 1px solid #aba9acb2;
-            background-color: #fefe9c;
-            border-radius: 3px;
-            padding: 4px;
-            width: 105px;
-        }
-
-        .payment-page .form-section .input-number {
-            font-family: 'prompt';
-            border: 1px solid #aba9acb2;
-            border-radius: 3px;
-            padding: 4px;
-            width: 105px;
-            color: #767676;
-        }
-
-        .payment-page .form-section select {
-            font-family: 'prompt';
-            border: 1px solid #aba9acb2;
-            border-radius: 3px;
-            padding: 4px;
-            min-width: 400px;
             color: #767676;
         }
 
@@ -75,16 +62,25 @@
             border: 1px solid #aba9acb2;
             border-radius: 3px;
             padding: 4px;
-            width: 188px;
+            min-width: 400px;
+            color: #767676;
         }
 
+        .payment-page .form-section .input-row select {
+            font-family: 'prompt';
+            border: 1px solid #aba9acb2;
+            border-radius: 3px;
+            padding: 4px;
+            min-width: 400px;
+            color: #767676;
+        }
         .payment-page .form-btn-div {
             display: flex;
             justify-content: space-between;
         }
 
         .payment-page .form-btn-div button {
-            background-color: #676769;
+            background-color: #aba9ac85;
             text-align: center;
             width: 130px;
             padding: 6px 5px 5px 5px;
@@ -93,116 +89,58 @@
             margin: 6px 2px;
             text-decoration: none;
             color: #FFF;
-            border: 1px solid #aba9acb2;
+            border: 1px solid #676769;
             font-family: 'Prompt';
             border-radius: 5px;
             cursor: pointer;
         }
 
         .payment-page .form-btn-div button:hover {
-            background-color: #676769ef;
+            background-color: #676769b0;
         }
     </style>
 </head>
 
 <body id="paymentPage">
     <section class="payment-page">
-        <h3>INVOICE HISTORY</h3>
         <article class="top-nav">
-            <a href="" class="active">GENERATE</a>
-            <a href="">HISTORY</a>
+            <h3 href="">DRIVER PAYMENT</h3>
         </article>
         <article class="form-section">
             <div class="left-form">
                 <div class="input-row">
-                    <label>FROM</label>
-                    <input type="date" class="input-date">
-                    <input type="text" placeholder="FRI 01Ist" class="input-day">
-                    <input type="number" placeholder="0000" class="input-number">
+                    <label>PAYMENT DATE</label>
+                    <input type="date" class="input-date" style="width:185px;">
+                    <input type="text" placeholder="WED 03rd" class="input-day" style="width:88px; background-color: #fefe9c;">
+                    <input type="text" placeholder="NOW" class="input-number" style="width:88px;">
                 </div>
 
                 <div class="input-row">
-                    <label>TO</label>
-                    <input type="date" class="input-date">
-                    <input type="text" placeholder="SUN 31st" class="input-day">
-                    <input type="number" placeholder="2359" class="input-number">
+                    <label>DRIVER REF</label>
+                    <input type="number" placeholder="001" class="input-date" style="width:187px;">
+                    <input type="text" placeholder="ZEESHAN KHANDWANI" style="width:189px;background-color: #fefe9c;">
                 </div>
 
                 <div class="input-row">
-                    <label>LAST INVOICE</label>
-                    <input type="date" class="input-date">
-                    <input type="text" placeholder="WED 03rd" class="input-day">
-                    <input type="number" placeholder="0000" class="input-number">
+                    <label>MODE</label>
+                    <select>
+                        <option value="" selected>CASH</option>
+                        <option value="CASH">CASH</option>
+                    </select>
                 </div>
             </div>
             <div class="right-form">
                 <div class="input-row">
-                    <label>DRV REF</label>
-                    <input style="background-color: #aba9ac;" disabled></input>
-                    <input style="background-color: #fefe9c;" disabled></input>
+                    <label>PAYMENT AMOUNT</label>
+                    <input type="number" placeholder="100"></input>
                 </div>
                 <div class="input-row">
-                    <label>DRIVER TYPE</label>
-                    <select>
-                        <option value="" selected>ALL</option>
-                        <option value="any">ANY</option>
-                        <option value="activated only">ACTIVATED ONLY</option>
-                        <option value="n/a">N/A</option>
-                    </select>
+                    <label>REF</label>
+                    <input type="text" placeholder="C2100" style="background-color: #aba9ac56;"></input>
                 </div>
                 <div class="input-row">
-                    <label>DRIVER ACTIVE</label>
-                    <select>
-                        <option value="" selected>ACTIVATED ONLY</option>
-                        <option value="any">ANY</option>
-                        <option value="activated only">ACTIVATED ONLY</option>
-                        <option value="n/a">N/A</option>
-                    </select>
-                </div>
-                <div class="input-row">
-                    <label>OUTPUT PREF</label>
-                    <select>
-                        <option value="" selected>ALL</option>
-                        <option value="any">ANY</option>
-                        <option value="activated only">ACTIVATED ONLY</option>
-                        <option value="n/a">N/A</option>
-                    </select>
-                </div>
-                <div class="input-row">
-                    <label>FREQUENCY</label>
-                    <select>
-                        <option value="" selected>ANY</option>
-                        <option value="any">ANY</option>
-                        <option value="activated only">ACTIVATED ONLY</option>
-                        <option value="n/a">N/A</option>
-                    </select>
-                </div>
-                <div class="input-row">
-                    <label>ITEM CHARGE</label>
-                    <select>
-                        <option value="" selected>All</option>
-                        <option value="any">ANY</option>
-                        <option value="activated only">ACTIVATED ONLY</option>
-                        <option value="n/a">N/A</option>
-                    </select>
-                </div>
-                <div class="input-row">
-                    <label>DRIVER PRIMARY SITE</label>
-                    <select>
-                        <option value="" selected>N/A</option>
-                        <option value="any">ANY</option>
-                        <option value="activated only">ACTIVATED ONLY</option>
-                        <option value="n/a">N/A</option>
-                    </select>
-                </div>
-                <div class="input-row">
-                    <label>INVOICE TYPE</label>
-                    <select>
-                        <option value="" selected>All</option>
-                        <option value="any">ANY</option>
-                        <option value="activated only">ACTIVATED ONLY</option>
-                        <option value="n/a">N/A</option>
-                    </select>
+                    <label>NOTE</label>
+                    <input type="text" placeholder=""></input>
                 </div>
             </div>
         </article>
