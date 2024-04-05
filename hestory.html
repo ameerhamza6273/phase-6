@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='buttonpages.css' rel='stylesheet'>
+    <title>history</title>
+    <style>
+        /* history table style */
+
+        .history-page table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border: 1px solid #8a868a;
+            margin-top: 30px;
+        }
+
+        .history-page th {
+            background-color: #918e91;
+            color: #fff;
+            padding: 4px 7px !important;
+            text-align: left;
+            font-size: 11px;
+            font-family: "Prompt";
+            font-weight: 600;
+        }
+
+        .history-page td {
+            padding: 2px 4px !important;
+            border: 1px solid #aaa9aa;
+            text-align: left;
+            font-size: 11px;
+            font-family: "Prompt";
+            font-weight: 600;
+            color: #000000de;
+        }
+
+        .history-page tr:hover {
+            background-color: #c4e1f8;
+        }
+
+        .history-page table button {
+            padding: 2px 10px;
+            font-size: 11px;
+            background-color: #776b75;
+            border: none;
+            font-weight: 600;
+            font-family: "Prompt";
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body id="historyPage">
+    <section class="history-page">
+        <article class="top-nav">
+            <a href="">GENERATE</a>
+            <a href="" class="active">HISTORY</a>
+        </article>
+        <article class="form-section">
+            <div class="left-form">
+                <div class="input-row">
+                    <label>FROM</label>
+                    <input type="date" class="input-date" style="width:240px;">
+                    <input type="text" placeholder="WED 03rd" class="input-day"
+                        style="width:150px; background-color: #fefe9c;">
+                </div>
+
+                <div class="input-row">
+                    <label>TO</label>
+                    <input type="number" placeholder="001" class="input-date" style="width:240px;">
+                    <input type="text" placeholder="WED 03rd" class="input-day"
+                        style="width:150px; background-color: #fefe9c;">
+                </div>
+
+                <div class="input-row">
+                    <label>INVOICE VALUE</label>
+                    <input type="text" style="min-width:404px;">
+                </div>
+            </div>
+            <div class="right-form">
+                <div class="input-row">
+                    <label>DRV REF</label>
+                    <input type="number" style="min-width:193px;" placeholder="270">
+                    <input type="text" placeholder="Aqeel Hussain" style="min-width:193px; background-color: #fefe9c;">
+                </div>
+                <div class="input-row">
+                    <label>OUT. PREF / FREQUENCY</label>
+                    <select>
+                        <option value="" selected>ALL</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only">ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                    <select>
+                        <option value="">ALL</option>
+                        <option value="any">ANY</option>
+                        <option value="activated only" selected>ACTIVATED ONLY</option>
+                        <option value="n/a">N/A</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label>INVOICE REF</label>
+                    <input type="text" placeholder=""></input>
+                </div>
+            </div>
+        </article>
+        <div style="width: 100%; border-top: 2px solid #bfbdc0; border-bottom: 2px solid #fbf9fc; margin-top: 5px;">
+        </div>
+        <!-- button for clear form and search -->
+        <article class="form-btn-div">
+            <button>CLEAR FORM</button>
+            <button onclick="document.getElementById('historyTable').style.display = 'block'">SEARCH</button>
+        </article>
+
+        <!-- table section is here -->
+        <article id="historyTable" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>INVOICE </th>
+                        <th>Date</th>
+                        <th>DRIVER</th>
+                        <th>TOTAL</th>
+                        <th>DUE DATE</th>
+                        <th>BOOKINGS</th>
+                        <th>PRINT</th>
+                        <th>REMOVE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7115 </td>
+                        <td>29 Feb 2024</td>
+                        <td style="color: #51b0f8;">Aqeel Hussain (247) </td>
+                        <td style="text-align: right; color: rgba(255, 0, 0, 0.829);">£-1.950.00 </td>
+                        <td>29 Feb 2024 </td>
+                        <td> <button>bookings(30)</button> </td>
+                        <td> <button>print</button> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>7115 </td>
+                        <td>29 Feb 2024</td>
+                        <td style="color: #51b0f8;">Aqeel Hussain (247) </td>
+                        <td style="text-align: right; color: rgba(255, 0, 0, 0.829);">£-1.950.00 </td>
+                        <td>29 Feb 2024 </td>
+                        <td> <button>bookings(30)</button> </td>
+                        <td> <button>print</button> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>7115 </td>
+                        <td>29 Feb 2024</td>
+                        <td style="color: #51b0f8;">Aqeel Hussain (247) </td>
+                        <td style="text-align: right; color: rgba(255, 0, 0, 0.829);">£-1.950.00 </td>
+                        <td>29 Feb 2024 </td>
+                        <td> <button>bookings(30)</button> </td>
+                        <td> <button>print</button> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+    </section>
+
+</body>
+
+</html>
