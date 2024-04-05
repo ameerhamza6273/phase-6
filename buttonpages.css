@@ -5,6 +5,7 @@
 #buttonPage,
 #invoicePage,
 #paymentPage,
+#transactionsPage,
 #generatePage{
     margin: 0;
     background-color: #eae8eb;
@@ -15,6 +16,7 @@
 .generate-page{
     padding: 20px 45px;
 }
+.transactions-page,
 .payment-page{
     padding: 35px 20px;
 }
@@ -425,4 +427,127 @@
     font-size: 12px;
     font-weight: 600;
     text-align: right;
+}
+
+/* transaction page style */
+
+.transactions-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF;
+    border: 1px solid #b0afb0;
+}
+
+.transactions-page th {
+    background-color: #918e91;
+    color: #FFF;
+    padding: 4px !important;
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Prompt';
+    font-weight: 600;
+}
+
+.transactions-page td {
+    padding: 2px 4px !important;
+    border: 1px solid #aaa9aa;
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Prompt';
+    font-weight: 600;
+    color: #000000de;
+}
+
+.transactions-page tr:hover {
+    background-color: #dddddd4b;
+}
+
+.transactions-page h2 {
+    font-family: 'Inter';
+    font-weight: 600;
+    margin-bottom: 11px;
+    font-size: 21px;
+    margin-top: 22px;
+}
+
+.transactions-page p {
+    font-weight: 600;
+    font-family: 'Inter';
+    font-size: 13px;
+}
+
+.transactions-page .owed-div {
+    display: flex;
+    margin-top: 85px;
+    border-top: 1px solid #d4d2d4;
+}
+
+.transactions-page .owed-div-inner {
+    width: 50%;
+    margin: 5px;
+}
+
+.transactions-page .owed-div-inner:nth-child(1) {
+    border-right: 1px solid #d4d2d4;
+}
+
+.transactions-page .owed-div-inner h4 {
+    font-family: 'Inter';
+    margin-bottom: 12px;
+}
+
+.transactions-page .owed-div-inner span {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.transactions-page .total-owed-div {
+    display: flex;
+    border-top: 1px solid #d4d2d4;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+
+.transactions-page .total-owed-div p {
+    text-align: right;
+    font-size: 12px;
+}
+
+.transactions-page .total-owed-div-inner {
+    width: 50%;
+}
+
+/* transactions page button style */
+
+.transactions-page .transaction-btn-div {
+    display: flex;
+    justify-content: end;
+    background-color: #989798;
+    padding: 10px 15px;
+}
+
+.transactions-page .transaction-btn-div button {
+    background-color: #676668;
+    text-align: center;
+    width: 180px;
+    padding: 6px 5px 5px 5px;
+    font-size: 12px;
+    display: block;
+    margin: 6px;
+    color: #FFF;
+    border: 1px solid #6767696c;
+    font-family: 'Prompt';
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transactions-page .table-btn-div button {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.transactions-page .transaction-btn-div button:hover {
+    background-color: #676769ce;
 }
