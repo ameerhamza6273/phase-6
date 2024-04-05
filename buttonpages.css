@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Prompt');
 /* button page style is here */
 #buttonPage,
 #invoicePage,
@@ -248,4 +251,178 @@
     border-radius: 3px;
     color: #FFF;
     cursor: pointer;
+}
+
+ /* payment page style */
+ .payment-page .top-nav {
+    border-bottom: 6px solid #aba9ac;
+}
+
+.payment-page .top-nav h3 {
+    padding: 6px 12px;
+    border-radius: 3px 3px 0px 0px;
+    color: #FFF;
+    background-color: #3e3b3e;
+    font-family: 'Prompt';
+    font-size: 13px;
+    max-width: 112px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+/* payment page form section */
+.payment-page .form-section {
+    display: flex;
+    gap: 30px;
+    margin: 0 30px;
+}
+
+.payment-page .form-section .right-form,
+.payment-page .form-section .left-form {
+    width: 50%;
+    text-align: right;
+    padding: 5px;
+}
+
+.payment-page .form-section .input-row {
+    margin-top: 2px;
+}
+
+.payment-page .form-section label {
+    font-family: 'Prompt';
+    font-size: 14px;
+    color: #413f42;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.payment-page .form-section input {
+    font-family: 'prompt';
+    border: 1px solid #aba9acb2;
+    border-radius: 3px;
+    padding: 4px;
+    color: #767676;
+}
+
+.payment-page .form-section .right-form input {
+    font-family: 'prompt';
+    border: 1px solid #aba9acb2;
+    border-radius: 3px;
+    padding: 4px;
+    min-width: 400px;
+    color: #767676;
+}
+
+.payment-page .form-section .input-row select {
+    font-family: 'prompt';
+    border: 1px solid #aba9acb2;
+    border-radius: 3px;
+    padding: 4px;
+    min-width: 400px;
+    color: #767676;
+}
+
+.payment-page .table-btn-div,
+.payment-page .form-btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-page .table-btn-div button,
+.payment-page .form-btn-div button {
+    background-color: #aba9ac85;
+    text-align: center;
+    width: 130px;
+    padding: 6px 5px 5px 5px;
+    font-size: 12px;
+    display: block;
+    margin: 6px 2px;
+    color: #FFF;
+    border: 1px solid #6767696c;
+    font-family: 'Prompt';
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-page .table-btn-div button {
+    width: 200px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.payment-page .table-btn-div button:hover,
+.payment-page .form-btn-div button:hover {
+    background-color: #676769b0;
+}
+
+/* payment table style */
+
+.payment-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF;
+    margin-top: 30px;
+}
+
+.payment-page table label {
+    margin-right: 10px;
+    margin-left: -50px;
+}
+
+.payment-page table input {
+    font-family: 'Inter';
+    border: 1px solid #aba9acb2;
+    border-radius: 3px;
+    padding: 5px;
+    color: #767676;
+    width: 60%;
+    margin: 4px 25px 4px 0;
+    background-color: transparent;
+}
+
+.payment-page th {
+    background-color: #474547;
+    color: #FFF;
+    border-left: 1px solid #aaa9aa;
+    padding: 11px !important;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Prompt';
+    font-weight: 600;
+}
+
+.payment-page td {
+    padding: 2px 4px !important;
+    border: 1px solid #aaa9aa;
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Prompt';
+    font-weight: 600;
+    color: #000000de;
+    height: 20px;
+}
+
+.payment-page tr:hover {
+    background-color: #dddddd4b;
+}
+
+.payment-page .bottom-row {
+    background-color: #dddddd4b;
+}
+
+.payment-page .detail-row {
+    border-top: none !important;
+    border: 1px solid #aaa9aa;
+    display: flex;
+    background-color: #FFF !important;
+}
+
+.payment-page .detail-row p {
+    font-family: 'Inter';
+    margin: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
 }
