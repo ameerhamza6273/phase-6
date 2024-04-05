@@ -478,13 +478,14 @@
 
 .transactions-page .owed-div {
     display: flex;
-    margin-top: 85px;
+    margin-top: 50px;
     border-top: 1px solid #d4d2d4;
 }
 
 .transactions-page .owed-div-inner {
     width: 50%;
     margin: 5px;
+    padding: 0 10px 20px 0px;
 }
 
 .transactions-page .owed-div-inner:nth-child(1) {
